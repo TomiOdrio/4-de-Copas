@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo, 4 de Copas</title>
+
+    <link rel="stylesheet" href="/diseños/proyectos/truco/estilos/estilos_partida.css">
+    <script src="https://kit.fontawesome.com/caed79763d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="barras"><i class="fa-solid fa-bars"></i></div>
+        <h1>Anotador Truco</h1>
+    </header>
+    <div class="partida">
+        <h1>Seleccionar tipo de partida</h1>
+        <div class="boton" id="btn15">Partida a 15</div>
+        <div class="boton" id="btn30">Partida a 30</div>
+    </div>
+    <div class="nombre">
+        <form id="form">
+            <h2>Inserte nombres de jugadores</h2>
+            <div class="entryarea">
+                <input type="text" name="jug1" id="jug1" required>
+                <div class="label">Jugador 1</div>
+            </div>
+            <div class="entryarea">
+                <input type="text" name="jug2" id="jug2" required>
+                <div class="label">Jugador 2</div>
+            </div>
+            <button type="button" class="boton" id="boton"><h3>Enviar</h3></button>
+        </form>
+    </div>
+    <div class="menu">
+        <span id="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+        <div class="bloqueMenu">
+            <h1>Menú</h1>
+            <div class="boton"><a href="/diseños/proyectos/truco/paginas/index.html">Inicio</a></div>
+            <div class="boton"><a href="/diseños/proyectos/truco/paginas/partida.html">Anotador</a></div>
+            <div class="boton"><a href="/diseños/proyectos/truco/paginas/newby.html">Soy un 4 de Copas</a></div>
+        </div>
+    </div>
+    <div class="contador">
+        <div class="jug">
+            <h2 id="nombre1"></h2>
+            <div class="puntaje">
+                <div class="col1">
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="botones">
+                <div class="btn" id="menos1"><i class="fa-solid fa-minus"></i></div>
+                <div class="btn" id="mas1"><i class="fa-solid fa-plus"></i></div>
+            </div>
+        </div>
+        <div class="jug">
+            <h2 id="nombre2"></h2>
+            <div class="puntaje">
+                <div class="col1">
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                    <div class="cuadrado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                    </div>
+                </div>    
+            </div>
+            <div class="botones">
+                <div class="btn" id="menos2"><i class="fa-solid fa-minus"></i></div>
+                <div class="btn" id="mas2"><i class="fa-solid fa-plus"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="win">
+        <div class="cartel">
+            <h2>Ganador: <span id="ganador"></span></h2>
+            <div class="btnwin" id="reinicio"><a href="/diseños/proyectos/truco/paginas/partida.html">Nueva Partida</a></div>
+            <div class="btnwin" id="menu"><a href="">Menú</a></div>
+        </div>
+        
+    </div>
+    <script src="/diseños/proyectos/truco/funciones/funciones_partida.js"></script>
+</body>
+</html>

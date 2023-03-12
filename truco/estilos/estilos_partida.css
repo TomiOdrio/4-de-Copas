@@ -1,0 +1,253 @@
+.partida{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.nombre{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+header{
+    display: flex;
+    margin: 5vw;
+    z-index: 3;
+    position: relative;
+}
+.barras{
+    position: absolute;
+    top: 3.2%;
+    left: 5%;
+    font-size: 7vw;
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    margin: auto;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+.bloqueMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu span{
+    position: absolute;
+    top: 3.2%;
+    left: 5%;
+    font-size: 7vw;
+    cursor: pointer;
+    z-index: 6;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #aa7ac3;
+    width: 70%;
+    height: 75vw;
+    border: 0.6vw solid rgba(91, 6, 122, 0.126);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 6vw;
+    margin:auto;
+}
+form h2{
+    text-align: center;
+    width: 80%;
+    margin: 0;
+}
+.entryarea{
+    width: 80%;
+    height: 7vw;
+    margin: 6vw auto 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.entryarea input{
+    margin:0;
+    position: absolute;
+    width: 100%;
+    height: 7vw;
+    outline: none;
+    font-size: 4vw;
+    padding: 1vw;
+    line-height: 1vw;
+    border: 0.1vw solid #40075d;
+    z-index: 1;
+    color:black;
+}
+.label{
+    position: absolute;
+    font-size: 4vw;
+    color: #40075d99;
+    padding: 0 1vw;
+    z-index: 2;
+    background:#fff;
+    left: 1vw;
+    top: 1vw;
+    pointer-events: none;
+}
+input:focus, input:valid{
+    color: black;
+    border:1.5px solid #40075d;
+}
+input:focus + .label, input:valid + .label{
+    transform: translate(0,-15px) scale(0.88);
+    font-size: 4vw;
+    z-index: 2;
+    font-weight: bold;
+    color: #40075d;
+    transition: 0.1s ease;
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin-top: 5vw;
+    background-color: black;
+    border-radius: 10vw;
+    color: white;
+    font-size: 3.5vw;
+    text-align: center;
+    padding: 2vw;
+}
+.boton h3{
+    margin:0;
+    padding: 1vw;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: #57585a;
+}
+.contador{
+    display: flex;
+    justify-content: space-around;
+}
+.jug{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.puntaje{
+    display: flex;
+    justify-content: space-between;
+}
+.col1, .col2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10vw,1fr));
+    gap: 4vw;
+}
+.cuadrado{
+    position: relative;
+    height: 10vw;
+}
+img{
+    position: absolute;
+    width: 5vw;
+    height: 100%;
+    display: none;
+}
+#top{
+    rotate: 112deg;
+    top: -5vw;
+    right: 2vw;
+}
+#der{
+    right: -3vw;
+    rotate: 202deg;
+}
+#bot{
+    rotate: 292deg;
+    bottom: -5vw;
+    left: 2vw;
+}
+#izq{
+    left: -3vw;
+    rotate: 22deg;
+}
+#cruzado{
+    rotate: 85deg;
+    width: 7vw;
+    left: 1.5vw;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border: 0.1vw solid black;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    margin-top: 8vw;
+    cursor: pointer;
+}
+.win{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.cartel{
+    position: absolute;
+    background-color: grey;
+    border: 1vw solid black;
+    width: 60%;
+    padding: 5vw;
+    top: 35vw;
+    left: 15vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btnwin{
+    margin: 1vw;
+    background-color: rgb(69, 67, 67);
+    border-radius: 30vw;
+    padding: 3vw;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
