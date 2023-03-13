@@ -1,34 +1,16 @@
-// SELECCIONAR PARTIDA
+// SELECCIONAR PARTIDA Y JUGADORES
 
 const btn15=document.querySelector("#btn15"),
 btn30=document.querySelector("#btn30"),
 cols1=document.getElementsByClassName("col1"),
 cols2=document.getElementsByClassName("col2"),
-partida=document.querySelector(".partida");
+partida=document.querySelector(".partida"),
+jug1 = document.querySelector("#jug1"),
+jug2 = document.querySelector("#jug2");
 
 var limite=0;
 
 btn15.addEventListener("click",function(){
-    partida.style.display="none";
-    limite=15;
-    for(let i=0;i<cols2.length;i++){
-        cols2[i].style.display="none";
-        cols1[i].gridTemplateColumns="repeat(auto-fit,minmax(1vw,1fr))";
-        document.querySelector(".puntaje").style.justifyContent="center"
-    }
-})
-btn30.addEventListener("click",function(){
-    partida.style.display="none";
-    limite=30;
-})
-
-// INSERTAR JUGADORES
-
-const btnSubmit = document.querySelector("#boton"),
-jug1 = document.querySelector("#jug1"),
-jug2 = document.querySelector("#jug2");
-
-btnSubmit.addEventListener("click",function(){
     if(jug1.value==""){
         alert("No puede introducir nombres vacíos");
         jug1.focus();
@@ -38,10 +20,34 @@ btnSubmit.addEventListener("click",function(){
         jug2.focus();
     }
     else{
-        document.querySelector(".nombre").style.display="none";
+        partida.style.display="none";
+        document.querySelector(".contador").style.display="flex"
         document.querySelector("#nombre1").innerHTML=jug1.value; 
         document.querySelector("#nombre2").innerHTML=jug2.value;
     }
+    limite=15;
+    for(let i=0;i<cols2.length;i++){
+        cols2[i].style.display="none";
+        cols1[i].gridTemplateColumns="repeat(auto-fit,minmax(1vw,1fr))";
+        document.querySelector(".puntaje").style.justifyContent="center"
+    }
+})
+btn30.addEventListener("click",function(){
+    if(jug1.value==""){
+        alert("No puede introducir nombres vacíos");
+        jug1.focus();
+    }
+    else if(jug2.value==""){
+        alert("No puede introducir nombres vacíos");
+        jug2.focus();
+    }
+    else{
+        partida.style.display="none";
+        document.querySelector(".contador").style.display="flex"
+        document.querySelector("#nombre1").innerHTML=jug1.value; 
+        document.querySelector("#nombre2").innerHTML=jug2.value;
+    }
+    limite=30;
 })
 
 // CONTAR PUNTOS
@@ -91,7 +97,7 @@ lessBtn2.addEventListener("click",function(){
 // ABRIR Y CERRAR MENU
 
 const bars = document.querySelector(".barras"),
-closeBtn = document.querySelector("#close"),
+closeBtn = document.querySelector("#x"),
 menu = document.querySelector(".menu");
 
 bars.addEventListener("click",function(){

@@ -135,7 +135,7 @@ calcBtn.addEventListener("click",function(){
 // ABRIR Y CERRAR MENU
 
 const bars = document.querySelector(".barras"),
-closeBtn = document.querySelector("#close"),
+closeBtn = document.querySelector("#x"),
 menu = document.querySelector(".menu");
 
 bars.addEventListener("click",function(){
@@ -143,4 +143,13 @@ bars.addEventListener("click",function(){
 })
 closeBtn.addEventListener("click",function(){
     menu.style.display="none";
+})
+
+//BOTON IR ARRIBA
+
+document.querySelector(".up").addEventListener("click",function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
 })

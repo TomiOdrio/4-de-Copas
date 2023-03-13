@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo, 4 de Copas</title>
 
-    <link rel="stylesheet" href="/truco/estilos/estilos_partida.css">
+    <link rel="stylesheet" href="/diseños/proyectos/truco/estilos/estilos_partida.css">
     <script src="https://kit.fontawesome.com/caed79763d.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="barras"><i class="fa-solid fa-bars"></i></div>
-        <h1>Anotador Truco</h1>
+        <h1 class="titulo"><span class="intermedio">Anotador</span> de Truco</h1>
     </header>
-    <div class="partida">
-        <h1>Seleccionar tipo de partida</h1>
-        <div class="boton" id="btn15">Partida a 15</div>
-        <div class="boton" id="btn30">Partida a 30</div>
+    <div class="menu">
+        <div class="close">
+            <i class="fa fa-window-close" aria-hidden="true" id="x"></i>
+            <h1 id="menu">Menú</h1>
+        </div>
+        <div class="bloqueMenu">
+            <div class="seccion" id="primera"><a href="/diseños/proyectos/truco/paginas/index.html" class="go_to">Inicio</a></div>
+            <div class="seccion"><a href="/diseños/proyectos/truco/paginas/partida.html" class="go_to">Anotador</a></div>
+            <div class="seccion"><a href="/diseños/proyectos/truco/paginas/newby.html" class="go_to">Soy un 4 de Copas</a></div>
+            <div class="seccion" id="contacto">
+                <h4>Contacto</h4>
+                <div class="redes">
+                    <a href="" class="redes"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="redes"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="redes"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="redes"><i class="fa-brands fa-linkedin"></i></a>
+                </div>    
+            </div>
+        </div>
     </div>
-    <div class="nombre">
+    <div class="partida">
+        <h2 class="subtitulo" id="subtitulo_form">Ingresar jugadores</h2></h1>
         <form id="form">
-            <h2>Inserte nombres de jugadores</h2>
             <div class="entryarea">
                 <input type="text" name="jug1" id="jug1" required>
                 <div class="label">Jugador 1</div>
@@ -31,17 +49,10 @@
                 <input type="text" name="jug2" id="jug2" required>
                 <div class="label">Jugador 2</div>
             </div>
-            <button type="button" class="boton" id="boton"><h3>Enviar</h3></button>
         </form>
-    </div>
-    <div class="menu">
-        <span id="close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
-        <div class="bloqueMenu">
-            <h1>Menú</h1>
-            <div class="boton"><a href="/truco/paginas/index.html">Inicio</a></div>
-            <div class="boton"><a href="/truco/paginas/partida.html">Anotador</a></div>
-            <div class="boton"><a href="/truco/paginas/newby.html">Soy un 4 de Copas</a></div>
-        </div>
+        <h2 class="subtitulo">Seleccionar tipo de partida</h1>
+        <div class="boton" id="btn15">Partida a 15</div>
+        <div class="boton" id="btn30">Partida a 30</div>
     </div>
     <div class="contador">
         <div class="jug">
@@ -49,48 +60,48 @@
             <div class="puntaje">
                 <div class="col1">
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                 </div>
                 <div class="col2">
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos1" id="cruzado">
                     </div>
                 </div>
                 
@@ -105,48 +116,48 @@
             <div class="puntaje">
                 <div class="col1">
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                 </div>
                 <div class="col2">
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                     <div class="cuadrado">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="top">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="der">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
-                        <img src="/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="top">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="der">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="bot">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="izq">
+                        <img src="/diseños/proyectos/truco/assets/fosforo.png" alt="" class="fos2" id="cruzado">
                     </div>
                 </div>    
             </div>
@@ -159,11 +170,11 @@
     <div class="win">
         <div class="cartel">
             <h2>Ganador: <span id="ganador"></span></h2>
-            <div class="btnwin" id="reinicio"><a href="/truco/paginas/partida.html">Nueva Partida</a></div>
-            <div class="btnwin" id="menu"><a href="">Menú</a></div>
+            <div class="btnwin" id="reinicio"><a href="/diseños/proyectos/truco/paginas/partida.html" class="win_go_to">Nueva Partida</a></div>
+            <div class="btnwin" id="inicio"><a href="/diseños/proyectos/truco/paginas/index.html" class="win_go_to">Inicio</a></div>
         </div>
         
     </div>
-    <script src="/truco/funciones/funciones_partida.js"></script>
+    <script src="/diseños/proyectos/truco/funciones/funciones_partida.js"></script>
 </body>
 </html>

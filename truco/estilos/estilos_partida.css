@@ -1,49 +1,42 @@
-.partida{
-    width: 100%;
-    height: 100vh;
-    background-color: grey;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.nombre{
-    width: 100%;
-    height: 100vh;
-    background-color: grey;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+body{
+    background-image: url("/diseños/proyectos/truco/assets/fondo.png");
+    font-family: 'Amatic SC', cursive;
 }
 header{
     display: flex;
+    align-items: center;
     margin: 5vw;
-    z-index: 3;
+    z-index: 2;
     position: relative;
 }
-.barras{
-    position: absolute;
-    top: 3.2%;
-    left: 5%;
-    font-size: 7vw;
-    cursor: pointer;
-}
-header h1{
+.titulo{
+    font-size: 12vw;
+    color: #e6ca92c5;
     text-align: center;
     margin: auto;
 }
+.intermedio{
+    color: #a27c2ec5;
+} 
+.barras{
+    position: absolute;
+    color: #e6ca92c5;
+    font-size: 7vw;
+    cursor: pointer;
+}
+.barras:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+}
 .menu{
-    width: 100%;
+    width: 40%;
     height: 100vh;
-    background-color: grey;
+    background-color: #4e3f23;
     position: fixed;
     top: 0;
     left: 0;
@@ -55,36 +48,84 @@ header h1{
     flex-direction: column;
     align-items: center;
 }
-.menu span{
+.close{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#menu{
+    width: 30%;
+    font-size: 9vw;
+    margin:5vw auto 0;
+}
+#x{
     position: absolute;
-    top: 3.2%;
-    left: 5%;
     font-size: 7vw;
     cursor: pointer;
     z-index: 6;
+    display: flex;
+    margin:5vw 0 0 5vw;
+}
+.seccion{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1vw solid #e6ca92c5;
+    color: rgba(255, 255, 255, 0.776);
+}
+.go_to{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.go_to:hover{
+    background-color: #e6ca92c5;
+}
+#primera{
+    border-top: 0.1vw solid #e6ca92c5;
+    margin-top:5vw;
+}
+#contacto{
+    flex-direction: column;
+    height: 15vw;
+}
+.redes{
+    margin-top: 1vw;   
+}
+.subtitulo{
+    font-size: 7vw;
+    color: #e6ca92c5;
+    text-align: center;
+    margin: 10vw 0;
+}
+#subtitulo_form{
+    margin-bottom: 0vw;
+}
+.partida{
+    width: 100%;
+    background-image: url("/diseños/proyectos/truco/assets/fondo.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 form{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: #aa7ac3;
-    width: 70%;
-    height: 75vw;
-    border: 0.6vw solid rgba(91, 6, 122, 0.126);
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    border-radius: 6vw;
+    width: 60%;
     margin:auto;
 }
-form h2{
-    text-align: center;
-    width: 80%;
-    margin: 0;
-}
 .entryarea{
-    width: 80%;
+    width: 30%;
     height: 7vw;
-    margin: 6vw auto 0;
+    margin: 10vw auto 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -95,35 +136,33 @@ form h2{
     width: 100%;
     height: 7vw;
     outline: none;
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 1vw;
     line-height: 1vw;
-    border: 0.1vw solid #40075d;
     z-index: 1;
     color:black;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    background-color: #e6ca92c5;
+    border:0;
+    border-radius: 10px;
 }
 .label{
-    position: absolute;
     font-size: 4vw;
-    color: #40075d99;
-    padding: 0 1vw;
+    color:black;
+    font-weight: bold;
+    margin: auto;
     z-index: 2;
-    background:#fff;
-    left: 1vw;
-    top: 1vw;
     pointer-events: none;
 }
-input:focus, input:valid{
-    color: black;
-    border:1.5px solid #40075d;
-}
 input:focus + .label, input:valid + .label{
-    transform: translate(0,-15px) scale(0.88);
+    transform: translate(0,-22px) scale(0.88);
     font-size: 4vw;
     z-index: 2;
     font-weight: bold;
-    color: #40075d;
     transition: 0.1s ease;
+    color:#e6ca92c5;
 }
 .boton{
     display: flex;
@@ -131,23 +170,19 @@ input:focus + .label, input:valid + .label{
     justify-content: center;
     width: 25%;
     margin-top: 5vw;
-    background-color: black;
+    background-color: #584011;
+    color:white;
     border-radius: 10vw;
-    color: white;
     font-size: 3.5vw;
     text-align: center;
     padding: 2vw;
-}
-.boton h3{
-    margin:0;
-    padding: 1vw;
+    cursor: pointer;
 }
 .boton:hover{
-    cursor: pointer;
-    background-color: #57585a;
-}
+    background-color: #a27c2ec5;
+} 
 .contador{
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 .jug{
@@ -207,13 +242,16 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: #a27c2ec5;
     border: 0.1vw solid black;
     width: 7vw;
     height: 7vw;
     border-radius: 50%;
     margin-top: 8vw;
     cursor: pointer;
+}
+.btn:hover{
+    background-color: #e6ca92c5;
 }
 .win{
     width: 100%;
@@ -225,29 +263,41 @@ img{
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
 }
 .cartel{
     position: absolute;
-    background-color: grey;
-    border: 1vw solid black;
+    background-color: #4e3f23;
+    border: 0.1vw solid black;
+    border-radius: 10px;
     width: 60%;
     padding: 5vw;
     top: 35vw;
-    left: 15vw;
-    z-index: 2;
+    left: 20%;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.btnwin{
-    margin: 1vw;
-    background-color: rgb(69, 67, 67);
-    border-radius: 30vw;
-    padding: 3vw;
+.cartel h2{
+    margin-bottom: 3vw;
 }
-a{
+#ganador{
+    color: #a27c2ec5;
+}
+.btnwin{
+    width: 50%;
+    text-align: center;
+    margin: 1vw;
+    background-color: #e6ca92c5;
+    border-radius: 10px;
+    padding: 2vw;
+    margin: 1vw;
+    color: black;
+    border: 0.1vw solid black;
+}
+.win_go_to{
     text-decoration: none;
-    color:white;
+    color:black;
 }
