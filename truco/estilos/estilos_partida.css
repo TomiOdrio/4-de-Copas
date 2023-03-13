@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url("/diseños/proyectos/truco/assets/fondo.png");
+    background-image: url("/truco/assets/fondo.png");
     font-family: 'Amatic SC', cursive;
 }
 header{
@@ -109,7 +109,7 @@ header{
 }
 .partida{
     width: 100%;
-    background-image: url("/diseños/proyectos/truco/assets/fondo.png");
+    background-image: url("/truco/assets/fondo.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
