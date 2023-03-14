@@ -256,7 +256,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 4vw 0 10vw;
+    margin-top: 4vw;
 }
 .up:hover{
     background-color: #a27c2ec5;
@@ -270,6 +270,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10vw;
 }
 .redes{
     color: black;
@@ -280,22 +281,24 @@ footer{
     transition: 0.1s;
     color: #4e3f23;
 }
-.redes i{
-    margin: 0 1vw;
-    font-size: 4vw;
+.redes_footer i{
+    margin: 0 2vw;
+    font-size: 7vw;
+    color: black;
 }
 .logo{
     margin: 0 5vw;
-    width: 25%;
+    width: 30%;
     text-align: center;
 }
 .logo h4{
-    padding-top: 2vw;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 #pagina{
+    font-size: 6vw;
     color: black;
     cursor: pointer;
+    text-decoration: none;
 }
 #pagina:hover{
     font-size: 5.5vw;

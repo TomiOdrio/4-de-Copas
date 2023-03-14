@@ -97,19 +97,19 @@ footer{
     color: #4e3f23;
 }
 .redes i{
-    margin: 0 1vw;
-    font-size: 4vw;
+    margin: 0 2vw;
+    font-size: 7vw;
 }
 .logo{
     margin: 0 5vw;
-    width: 25%;
+    width: 30%;
     text-align: center;
 }
 .logo h4{
-    padding-top: 2vw;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 #pagina{
+    font-size: 6vw;
     color: black;
     cursor: pointer;
 }
