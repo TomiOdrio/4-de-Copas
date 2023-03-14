@@ -29,7 +29,7 @@ btn15.addEventListener("click",function(){
     for(let i=0;i<cols2.length;i++){
         cols2[i].style.display="none";
         cols1[i].gridTemplateColumns="repeat(auto-fit,minmax(1vw,1fr))";
-        document.querySelector(".puntaje").style.justifyContent="center"
+        document.getElementsByClassName("puntaje")[i].style.justifyContent="center";
     }
 })
 btn30.addEventListener("click",function(){
