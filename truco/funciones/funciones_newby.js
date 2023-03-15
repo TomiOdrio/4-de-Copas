@@ -136,7 +136,7 @@ calcBtn.addEventListener("click",function(){
 
 const bars = document.querySelector(".barras"),
 closeBtn = document.querySelector("#x"),
-menu = document.querySelector(".menu");
+menu = document.querySelector(".sombra");
 
 bars.addEventListener("click",function(){
     menu.style.display="block";
