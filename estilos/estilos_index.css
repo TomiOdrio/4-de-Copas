@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-image: url("./truco/assets/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amatic SC', cursive;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.8rem;
+    margin-bottom: 5.6rem;
+}
+.titulo{
+    font-size: clamp(2.8rem,12vw,6.25rem);
+    color: #e6ca92c5;
+    text-align: center;
+    pointer-events: none;
+}
+.boton{
+    width: 12rem;
+    margin-top: 2.1rem;
+    background-color: #746546c5;
+    border: 0.06rem solid black;
+    border-radius: 10vw;
+    font-size: clamp(1.25rem,4.5vw,2rem);
+    text-align: center;
+    cursor: pointer;
+}
+.go_to{
+    width: 100%;
+    height: 100%;
+    border-radius: 10vw;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.go_to:hover{
+    background-color: #e6ca92c5;
+    color: black;
+}
+#card_box{
+    justify-content: center;
+    margin: 2rem 0;
+}
+#card_box div{
+    width: 20rem;
+    font-size: clamp(1rem,4.5vw,1.5rem);
+    text-align: center;
+    background-color: #746546c5;
+    border: 0.1vw solid black;
+    border-radius: 50px 0;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+    color: #fff;
+    pointer-events: none;
+}
+#card_box div p{
+    margin: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+.subtitulo{
+    font-size: clamp(1.5rem,7vw,3rem);
+    color: #e6ca92c5;
+    text-align: center;
+    pointer-events: none;
+}
+.intermedio{
+    color: #a27c2ec5;
+}
+.up{
+    width: clamp(2rem,8vw,4rem);
+    height: clamp(2rem,8vw,4rem);
+    border-radius: 50%;
+    background-color: #e6ca92c5;
+    border: 0.1vw solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vw;
+    cursor: pointer;
+}
+.up:hover{
+    background-color: #a27c2ec5;
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+footer{
+    background-color: #e6ca92c5;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes_footer{
+    color: black;
+}
+.redes_footer:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+    color: #4e3f23;
+}
+.redes_footer i{
+    margin: 0 2vw;
+    font-size: clamp(1.5rem,7vw,2.5rem);
+}
+.logo{
+    margin: 0 0.5rem;
+    width: clamp(8rem,40%,10rem);
+    text-align: center;
+}
+.logo h4{
+    font-size: clamp(0.8rem,4vw,1.3rem);
+    margin:0.5rem 0 0;
+    pointer-events: none;
+    font-weight: bold;
+}
+#pagina{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#pagina h3{
+    font-size: clamp(1.2rem,6vw,2.5rem);
+    font-weight: bold;
+}
+#pagina:hover h3{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.s{
+    color: rgb(72, 72, 190);
+}
