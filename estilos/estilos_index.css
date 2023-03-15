@@ -7,7 +7,7 @@ html{
     font-size: 16px;
 }
 body{
-    background-image: url("./truco/assets/fondo.png");
+    background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Amatic SC', cursive;
