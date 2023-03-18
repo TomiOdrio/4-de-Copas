@@ -72,9 +72,11 @@ plusBtn1.addEventListener("click",function(){
     }
 })
 lessBtn1.addEventListener("click",function(){
-    cont1-=1;
-    for(let i=cont1 ; i<=cont1 ; i++){
-        fos1[i].style.display="none";
+    if(cont1>0){
+        cont1-=1;
+        for(let i=cont1 ; i<=cont1 ; i++){
+            fos1[i].style.display="none";
+        }
     }
 })
 plusBtn2.addEventListener("click",function(){
@@ -88,9 +90,11 @@ plusBtn2.addEventListener("click",function(){
     }
 })
 lessBtn2.addEventListener("click",function(){
-    cont2-=1;
-    for(let i=cont2 ; i<=cont2 ; i++){
-        fos2[i].style.display="none";
+    if(cont2>0){
+        cont2-=1;
+        for(let i=cont2 ; i<=cont2 ; i++){
+            fos2[i].style.display="none";
+        }
     }
 })
 
