@@ -27,7 +27,7 @@ body{
     pointer-events: none;
 }
 .boton{
-    width: 12rem;
+    width: clamp(12rem,50%,30rem);
     margin-top: 2.1rem;
     background-color: #746546c5;
     border: 0.06rem solid black;
@@ -56,14 +56,14 @@ body{
     margin: 2rem 0;
 }
 #card_box div{
-    width: 20rem;
-    font-size: clamp(1rem,4.5vw,1.5rem);
+    width: clamp(19rem,40%,40rem);
+    font-size: clamp(1.5rem,3vw,2rem);
     text-align: center;
     background-color: #746546c5;
     border: 0.1vw solid black;
     border-radius: 50px 0;
-    margin: 1rem 2rem;
-    padding: 0.5rem;
+    margin: 3rem 2rem;
+    padding: clamp(0.5rem,1vw,0.8rem);
     color: #fff;
     pointer-events: none;
 }
@@ -87,8 +87,9 @@ body{
     color: #a27c2ec5;
 }
 .up{
-    width: clamp(2rem,8vw,4rem);
-    height: clamp(2rem,8vw,4rem);
+    width: clamp(2.5rem,8vw,5rem);
+    height: clamp(2.5rem,8vw,5rem);
+    font-size: clamp(1rem,2vw,1.5rem);
     border-radius: 50%;
     background-color: #e6ca92c5;
     border: 0.1vw solid black;
